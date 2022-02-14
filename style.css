@@ -18,7 +18,7 @@ h1 {
   border-radius: 15px;
   margin-left: 20px;
   position: absolute;
-  top: 15%;
+  top: 12.5%;
   background-color: #eee;
 }
 
@@ -49,9 +49,10 @@ q {
 section {
   display: flex;
   position: absolute;
-  top: 62.5%;
+  top: 60%;
   width: 100%;
   margin-right: 20px;
+  display: none;
 }
 
 section p {
@@ -60,6 +61,7 @@ section p {
 
 img {
   width: 100px;
+  height: 100px;
   margin: 0 15px 0 20px;
   border-radius: 50%;
 }
@@ -73,7 +75,7 @@ button {
   border-radius: 5px;
   border: 1px solid grey;
   position: absolute;
-  top: 85%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
