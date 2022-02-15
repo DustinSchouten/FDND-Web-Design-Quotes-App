@@ -70,13 +70,13 @@ function renderQuoteToHTML(data) {
 }
 
 function showLoadingState() {
-  document.querySelector('#textballoon').style.display = 'none'
+  document.querySelector('#textballoon_normal_state').style.display = 'none'
   document.querySelector('#textballoon_loading_state').style.display = 'flex'
   document.querySelector('#personal_info_loading_state').style.display = 'flex'
 }
 
 function hideLoadingState() {
-  document.querySelector('#textballoon').style.display = 'flex'
+  document.querySelector('#textballoon_normal_state').style.display = 'flex'
   document.querySelector('#textballoon_loading_state').style.display = 'none'
   document.querySelector('#personal_info_loading_state').style.display = 'none'
 }
