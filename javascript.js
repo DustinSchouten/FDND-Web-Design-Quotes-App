@@ -36,7 +36,7 @@ function generateQuote() {
 
 function renderQuoteToHTML(data) {
   const quotesLength = data.length
-  const randomQuoteId = Math.floor(Math.random()*quotesLength);
+  const randomQuoteId = Math.floor(Math.random()*quotesLength)
   const quoteText = data[randomQuoteId].text
   const name = data[randomQuoteId].name
   const bio = data[randomQuoteId].bio
@@ -55,10 +55,10 @@ function renderQuoteToHTML(data) {
   // Animation restarted
 
   if (avatarImgURL != '') { // If there is no image
-    document.querySelector('#avatar').src = avatarImgURL
+    document.querySelector('.avatar').src = avatarImgURL
   }
   else {
-    document.querySelector('#avatar').src = 'image_skeleton.png'
+    document.querySelector('.avatar').src = 'image_skeleton.png'
   }
 
   if (quoteText.length > 100) { // Set the font size smaller if the quote has much text
