@@ -9,17 +9,49 @@
   </head>
   <body>
     <h1>FDND Web Design Quotes App</h1>
-    <div class="textBalloon">
+
+    <!-- Normal state -->
+    <section id="textballoon" class='textballoon'>
       <q id='quoteText'>The app for the best and most inspirational quotes!</q>
-    </div>
-    <section>
-      <img id='avatar' alt='author_picture'> <!-- remove the image later --> 
-      <div>
-        <p id='name'><strong>Name: </strong></p>
-        <p id='bio'><strong>Bio: </strong></p>
-        <p id='tags'></p>
-      </div>
     </section>
+    <section id='personal_info_normal_state'>
+      <img id='avatar' alt='author_picture'>
+      <section>
+        <div class="reader">
+          <p id='name'></p>
+          <p id='bio'></p>
+          <p id='tags'></p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Loading state -->
+    <section id="textballoon_loading_state" class='textballoon'>
+      <section class="grey_bars">
+        <div class="grey_bar"></div>
+        <div class="grey_bar"></div>
+        <div class="grey_bar"></div>
+      </section>
+    </section>
+    <section id='personal_info_loading_state'>
+      <img id='avatar' src='image_skeleton.png' alt='picture_loading'>
+      <section>
+        <div class="grey_bar"></div>
+        <div class="grey_bar"></div>
+        <div class="grey_bar"></div>
+      </section>
+    </section>
+
+    <!-- Empty state -->
+    <section id='empty_state'>
+      <p>Error!<br>No inspirational quotes found!</p>
+    </section>
+
+    <!-- Error state -->
+    <section id='error_state'>
+      <p>Error!<br>The quotes cannot be loaded!</p>
+    </section>
+
     <button type="button" name="button">Generate new quote!</button>
     <script type="text/javascript" src='javascript.js'></script>
   </body>
