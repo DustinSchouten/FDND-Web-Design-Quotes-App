@@ -54,10 +54,10 @@ function renderQuoteToHTML(data) {
   document.querySelector('#quoteText').style.animation = null
   // Animation restarted
 
-  if (avatarImgURL != '') { // If there is no image
+  if (avatarImgURL != '') { // Check if there is an image
     document.querySelector('.avatar').src = avatarImgURL
   }
-  else {
+  else { // If there is no image
     document.querySelector('.avatar').src = 'image_skeleton.png'
   }
 
