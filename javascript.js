@@ -5,7 +5,7 @@ function generateQuote() {
 
   const apiURL = 'https://quote.api.fdnd.nl/v1/quote'
   fetch(apiURL)
-    .then((response) => {
+    .then((response) => { // Check if the response status is OK, if yes return the response data
       if (response.status >= 200 && response.status <= 299) {
         return response.json();
       }
@@ -13,20 +13,23 @@ function generateQuote() {
         throw Error(response.statusText);
       }
     })
+
     .then(function(data) {
       hideLoadingState()
-      const quotesLength = data.length
-      if (quotesLength == 0) {
+      const quotesLength = data.data.length
+      if (quotesLength == 0) { // Check if the amount of quotes is zero
         showEmptyState()
       }
       else {
         renderQuoteToHTML(data.data)
       }
     })
-    .catch((error) => {
+
+    .catch((error) => { // If the response status is not OK
       showErrorState()
     })
-    .finally(() => {
+
+    .finally(() => { // Always executed
       console.log('Program finished');
     });
 }
@@ -40,15 +43,17 @@ function renderQuoteToHTML(data) {
   const tags = data[randomQuoteId].tags
   const avatarImgURL = data[randomQuoteId].avatar
   document.querySelector('#quoteText').textContent = quoteText
-  document.querySelector('#name').innerHTML =  name
+  document.querySelector('#name').innerHTML = name
   document.querySelector('#bio').innerHTML = bio
   document.querySelector('#tags').innerHTML = tags
   document.querySelector('#personal_info_normal_state').style.display = 'flex'
 
-  //Restart the animation
+  // Restart the animation
   document.querySelector('#quoteText').style.animation = 'none'
   document.querySelector('#quoteText').offsetHeight
   document.querySelector('#quoteText').style.animation = null
+  // Animation restarted
+
   if (avatarImgURL != '') { // If there is no image
     document.querySelector('#avatar').src = avatarImgURL
   }
