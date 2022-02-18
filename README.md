@@ -1,1 +1,1 @@
-https://dustinschouten.github.io/FDND-Web-Design-Quotes-App/
+Link naar project: https://dustinschouten.github.io/FDND-Web-Design-Quotes-App/
