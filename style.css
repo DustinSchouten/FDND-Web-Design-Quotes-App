@@ -153,7 +153,7 @@ button:hover {
   animation: animateGreyBars 0.5s infinite 0s;
 }
 
-#personal_info_loading_state section {
+#personal_info_loading_state div {
   width: calc(100% - 20px);
 }
 
