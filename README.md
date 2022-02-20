@@ -8,11 +8,23 @@ Dit project is gemaakt en bedoeld voor mensen die op zoek zijn naar inspirerende
 ## User story: 
 As a student Digital Design, I want to look at inspiring web design quotes, to get some fresh energy when I'm down while working on crazy deadlines
 
-## Alle verschillende states:
+## Alle verschillende schermen:
 Dit project kent een aantal verschillende schermen:
 
-![](Projectbeschrijving_images/home_screen.png) ![](Projectbeschrijving_images/ideal_state.png)
+### Home screen:
+![](Projectbeschrijving_images/home_screen.png)
 
-![](Projectbeschrijving_images/loading_state.png)![](Projectbeschrijving_images/empty_state.png)
+### Ideal state:
+![](Projectbeschrijving_images/ideal_state.png)
 
-![](Projectbeschrijving_images/error_state.png)![](Projectbeschrijving_images/javascript_breakdown.png)
+### Loading state:
+![](Projectbeschrijving_images/loading_state.png)
+
+### Empty state:
+![](Projectbeschrijving_images/empty_state.png)
+
+### Error state:
+![](Projectbeschrijving_images/error_state.png)
+
+Hieronder is een breakdown schets met een beknopte beschrijving van de JavaScript functies weergegeven:
+![](Projectbeschrijving_images/javascript_breakdown.png)
