@@ -47,7 +47,7 @@ q {
   padding: 20px;
   transform: translate(-50%,-50%);
   width: calc(100% - 40px);
-  animation: showQuote 0.5s forwards 0s
+  animation: showQuote 0.5s forwards 0s;
 }
 
 #personal_info_normal_state {
