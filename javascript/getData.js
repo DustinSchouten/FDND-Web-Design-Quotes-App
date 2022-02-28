@@ -4,9 +4,9 @@ import { showEmptyState } from '/javascript/states.js'
 import { showErrorState } from '/javascript/states.js'
 import { renderQuoteToHTML } from '/javascript/renderQuoteToHTML.js'
 
-let dataLoaded = false;
 export function getData() {
   showLoadingState()
+  document.querySelector('.auto_reload_button').style.display = 'inherit'
 
   const apiURL = 'https://quote.api.fdnd.nl/v1/quote'
   fetch(apiURL)

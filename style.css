@@ -89,7 +89,7 @@ q {
   background-color: #bbb;
 }
 
-img {
+img.avatar {
   width: 100px;
   height: 100px;
   margin-right: 15px;
@@ -100,7 +100,7 @@ img {
   color: #7272fa;
 }
 
-button {
+button.generate_quote_button, button.auto_reload_button {
   background-color: white;
   border-radius: 5px;
   border: 1px solid grey;
@@ -112,11 +112,37 @@ button {
   cursor: pointer;
   transition: 0.5s all ease;
   font-size: 1em;
+  height: 50px;
 }
 
-button:hover {
+button.generate_quote_button:hover {
   transform: translateX(-50%) scale(1.05);
   box-shadow: 0px 0px 5px black;
+}
+
+button.auto_reload_button {
+  left: 85%;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+button.auto_reload_button img {
+  width: 37.5px;
+  height: 37.5px;
+  padding: 5px;
+  animation: none 2s forwards 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotatingRefreshIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Loading state */
@@ -149,7 +175,7 @@ button:hover {
   margin-left: 20px;
 }
 
-#personal_info_loading_state img {
+#personal_info_loading_state img.avatar {
   animation: animateGreyBars 0.5s infinite 0s;
 }
 
