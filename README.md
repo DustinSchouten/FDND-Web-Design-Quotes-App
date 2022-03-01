@@ -27,7 +27,7 @@ Dit project kent een aantal verschillende schermen:
 ![](projectbeschrijving_images/error_state.png)
 
 Hieronder is een breakdown schets met een beknopte beschrijving van de JavaScript functies weergegeven:
-![](projectbeschrijving_images/activity_diagram.png)
+![](projectbeschrijving_images/javascript_breakdown.png)
 
 Ondertussen is de code gerefactord en is er een auto_reloader toegevoegd. Van de code is hier een activity diagram toegevoegd.
 ![](projectbeschrijving_images/activity_diagram.png)
