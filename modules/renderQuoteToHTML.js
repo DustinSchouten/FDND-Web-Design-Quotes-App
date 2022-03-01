@@ -14,7 +14,7 @@ export function renderQuoteToHTML(data) {
   document.querySelector('#name').textContent = name
   document.querySelector('#bio').textContent = bio
   document.querySelector('#tags').textContent = tags
-  document.querySelector('#personal_info_normal_state').style.display = 'flex'
+  document.querySelector('#personal_info_empty_state').style.display = 'flex'
 
   // Restart the animation
   quotesTextElement.style.animation = 'none'

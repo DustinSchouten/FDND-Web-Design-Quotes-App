@@ -1,13 +1,10 @@
-import { showLoadingState } from '/javascript/states.js'
-import { hideLoadingState } from '/javascript/states.js'
-import { showEmptyState } from '/javascript/states.js'
-import { showErrorState } from '/javascript/states.js'
-import { renderQuoteToHTML } from '/javascript/renderQuoteToHTML.js'
+import { hideLoadingState } from '/modules/states.js'
+import { showErrorNotLoadedState } from '/modules/states.js'
+import { showErrorNoQuotesFoundState } from '/modules/states.js'
+import { renderQuoteToHTML } from '/modules/renderQuoteToHTML.js'
+import { showLoadingState } from '/modules/states.js'
 
 export function getData() {
-  showLoadingState()
-  document.querySelector('.auto_reload_button').style.display = 'inherit'
-
   const apiURL = 'https://quote.api.fdnd.nl/v1/quote'
   fetch(apiURL)
     .then((response) => { // Check if the response status is OK, if yes return the response data
@@ -23,15 +20,16 @@ export function getData() {
       hideLoadingState()
       const quotesLength = data.data.length
       if (quotesLength == 0) { // Check if the amount of quotes is zero
-        showEmptyState()
+        showErrorNoQuotesFoundState()
       }
       else {
         renderQuoteToHTML(data.data)
+        document.querySelector('.auto_reload_button').style.display = 'inherit'
       }
     })
 
     .catch((error) => { // If the response status is not OK
-      showErrorState()
+      showErrorNotLoadedState()
     })
 
     .finally(() => { // Always executed

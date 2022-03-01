@@ -12,19 +12,22 @@ As a student Digital Design, I want to look at inspiring web design quotes, to g
 Dit project kent een aantal verschillende schermen:
 
 ### Home screen:
-![](Projectbeschrijving_images/home_screen.png)
+![](projectbeschrijving_images/home_screen.png)
 
 ### Ideal state:
-![](Projectbeschrijving_images/ideal_state.png)
+![](projectbeschrijving_images/ideal_state.png)
 
 ### Loading state:
-![](Projectbeschrijving_images/loading_state.png)
+![](projectbeschrijving_images/loading_state.png)
 
 ### Empty state:
-![](Projectbeschrijving_images/empty_state.png)
+![](projectbeschrijving_images/empty_state.png)
 
 ### Error state:
-![](Projectbeschrijving_images/error_state.png)
+![](projectbeschrijving_images/error_state.png)
 
 Hieronder is een breakdown schets met een beknopte beschrijving van de JavaScript functies weergegeven:
-![](Projectbeschrijving_images/javascript_breakdown.png)
+![](projectbeschrijving_images/javascript_breakdown.png)
+
+Ondertussen is de code gerefactord en is er een auto_reloader toegevoegd. Van de code is hier een activity diagram toegevoegd.
+![](projectbeschrijving_images/activity_diagram.png)

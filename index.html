@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script type="module" src='javascript/app.js'></script>
+    <script type="module" src='modules/app.js'></script>
     <title>FDND Web Design Quotes App</title>
   </head>
   <body>
     <h1>FDND Web Design Quotes App</h1>
 
-    <!-- Normal state -->
-    <section id="textballoon_normal_state" class='textballoon'>
+    <!-- Empty state -->
+    <div class="progress_bar"></div>
+    <section id="textballoon_empty_state" class='textballoon'>
       <q id='quoteText'>The app for the best and most inspirational quotes!</q>
     </section>
-    <section id='personal_info_normal_state'>
+    <section id='personal_info_empty_state'>
       <img class='avatar' alt='author_picture'>
       <section>
         <div class="reader">
@@ -43,19 +44,22 @@
       </div>
     </section>
 
-    <!-- Empty state -->
-    <section id='empty_state'>
+    <!-- Error no quotes found state -->
+    <section id='error_no_quotes_found_state'>
       <p>Error!<br>No inspirational quotes found!</p>
     </section>
 
-    <!-- Error state -->
-    <section id='error_state'>
+    <!-- Error not loaded state -->
+    <section id='error_not_loaded_state'>
       <p>Error!<br>The quotes cannot be loaded!</p>
     </section>
 
-    <button class='generate_quote_button' type="button" name="button">Generate new quote!</button>
+    <button class='generate_quote_button' type="button" name="button">
+      <a href="#ideal_state">Generate new quote!</a>
+    </button>
+
     <button class='auto_reload_button' type="button" name="button">
-      <a href="#auto_reload">
+      <a href="#ideal_auto_reload_state">
         <img src='refresh_icon.jpg'>
       </a>
     </button>
