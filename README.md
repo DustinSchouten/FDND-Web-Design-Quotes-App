@@ -12,7 +12,7 @@ As a student Digital Design, I want to look at inspiring web design quotes, to g
 Dit project kent een aantal verschillende schermen:
 
 ### Home screen:
-![](projectbeschrijving_images/home.png)
+![](projectbeschrijving_images/empty_state.png)
 
 ### Ideal state:
 ![](projectbeschrijving_images/ideal_state.png)
