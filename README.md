@@ -15,10 +15,10 @@ Dit project kent een aantal verschillende schermen:
 ![](projectbeschrijving_images/empty_state.png)
 
 ### Ideal state:
-![](projectbeschrijving_images/ideal.png)
+![](projectbeschrijving_images/ideal_state.png)
 
 ### Loading state:
-![](projectbeschrijving_images/loading.png)
+![](projectbeschrijving_images/loading_state.png)
 
 ### Error state cannot load quotes:
 ![](projectbeschrijving_images/error_state_cannot_load_quotes.png)
