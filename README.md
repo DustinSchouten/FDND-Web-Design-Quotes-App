@@ -21,7 +21,7 @@ Dit project kent een aantal verschillende schermen:
 ![](projectbeschrijving_images/loading_state.png)
 
 ### Error state cannot load quotes:
-![](projectbeschrijving_images/error_state_cannot_load_quotess.png)
+![](projectbeschrijving_images/error_state_cannot_load_quotes.png)
 
 ### Error state no quotes found:
 ![](projectbeschrijving_images/error_state_no_quotes_found.png)
