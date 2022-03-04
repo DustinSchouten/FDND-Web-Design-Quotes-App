@@ -1,15 +1,19 @@
 import { getData } from '/modules/getData.js'
 
+let textballoon_empty_state = document.querySelector('#textballoon_empty_state')
+let textballoon_loading_state = document.querySelector('#textballoon_loading_state')
+let personal_info_loading_state = document.querySelector('#personal_info_loading_state')
+
 export function showLoadingState() {
-  document.querySelector('#textballoon_empty_state').style.display = 'none'
-  document.querySelector('#textballoon_loading_state').style.display = 'flex'
-  document.querySelector('#personal_info_loading_state').style.display = 'flex'
+  textballoon_empty_state.style.display = 'none'
+  textballoon_loading_state.style.display = 'flex'
+  personal_info_loading_state.style.display = 'flex'
 }
 
 export function hideLoadingState() {
-  document.querySelector('#textballoon_empty_state').style.display = 'flex'
-  document.querySelector('#textballoon_loading_state').style.display = 'none'
-  document.querySelector('#personal_info_loading_state').style.display = 'none'
+  textballoon_empty_state.style.display = 'flex'
+  textballoon_loading_state.style.display = 'none'
+  personal_info_loading_state.style.display = 'none'
 }
 
 export function showErrorNoQuotesFoundState() {
