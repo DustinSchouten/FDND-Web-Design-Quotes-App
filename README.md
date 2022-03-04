@@ -17,6 +17,9 @@ Dit project kent een aantal verschillende schermen:
 ### Ideal state:
 ![](projectbeschrijving_images/ideal_state.png)
 
+### Ideal auto reload state:
+![](projectbeschrijving_images/ideal_auto_reload_state.png)
+
 ### Loading state:
 ![](projectbeschrijving_images/loading_state.png)
 
