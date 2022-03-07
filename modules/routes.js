@@ -1,31 +1,30 @@
 import { Routie } from './routie.js'
-import { getData } from '/modules/getData.js'
-import { showLoadingState } from '/modules/states.js'
-import { setIdealState } from '/modules/states.js'
-import { setIdealAutoReloadState } from '/modules/states.js'
+import { switchToIdealState } from '/modules/states.js'
+import { switchToIdealAutoReloadState } from '/modules/states.js'
 
 export function handleRoutes() {
   routie(
     {
-      'ideal_state' : () => {
-        showLoadingState()
-        getData()
+      // 'homepage' : () => {
+      // },
+
+      'overviewpage' : () => {
+        switchToIdealState() // This function is only needed if there is already switched to the auto reload state
       },
 
-      'ideal_auto_reload_state' : () => {
-        showLoadingState()
-        getData()
+      'overviewpage_auto_reload' : () => {
+        switchToIdealAutoReloadState()
       }
     })
 }
 
-export function changeLocationHash() {
-  if (location.hash == '#ideal_state') {
-    setIdealState()
-  }
-  if (location.hash == '#ideal_auto_reload_state') {
-    setIdealAutoReloadState()
-  }
-}
-
-window.onhashchange = changeLocationHash
+// export function changeLocationHash() {
+//   if (location.hash == '#overviewpage') {
+//     setIdealState()
+//   }
+//   if (location.hash == '#overviewpage_auto_reload') {
+//     setIdealAutoReloadState()
+//   }
+// }
+//
+// window.onhashchange = changeLocationHash

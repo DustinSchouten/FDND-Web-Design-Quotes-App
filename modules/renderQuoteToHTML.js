@@ -1,3 +1,10 @@
+let avatarImgElement = document.querySelector('.avatar')
+let quoteTextElement = document.querySelector('#quoteText')
+let nameElement = document.querySelector('#name')
+let bioElement = document.querySelector('#bio')
+let tagsElement = document.querySelector('#tags')
+let personal_info_empty_stateElement = document.querySelector('#personal_info_empty_state')
+
 export function renderQuoteToHTML(data) {
   const quotesLength = data.length
   const randomQuoteId = Math.floor(Math.random()*quotesLength)
@@ -7,28 +14,24 @@ export function renderQuoteToHTML(data) {
   const tags = data[randomQuoteId].tags
   const avatarImgURL = data[randomQuoteId].avatar
 
-  let avatarImgElement = document.querySelector('.avatar')
-  let quotesTextElement = document.querySelector('#quoteText')
+  // Set the avatarImgElement. If the avatarImgURL is '', set the src to image_skeleton.png
+  avatarImgElement.src = (avatarImgURL || 'image_skeleton.png');
 
-  document.querySelector('#quoteText').textContent = quoteText
-  document.querySelector('#name').textContent = name
-  document.querySelector('#bio').textContent = bio
-  document.querySelector('#tags').textContent = tags
-  document.querySelector('#personal_info_empty_state').style.display = 'flex'
+  quoteTextElement.textContent = quoteText
+  nameElement.textContent = name
+  bioElement.textContent = bio
+  tagsElement.textContent = tags
+  personal_info_empty_stateElement.style.display = 'flex'
 
   // Restart the animation
-  quotesTextElement.style.animation = 'none'
-  quotesTextElement.offsetHeight
-  quotesTextElement.style.animation = null
+  quoteTextElement.style.animation = 'none'
+  quoteTextElement.offsetHeight
+  quoteTextElement.style.animation = null
   // Animation restarted
 
-
-  // Set the avatarImgElement. If the avatarImgURL is '', set the src to image_skeleton.png
-  avatarImgElement.src = (avatarImgURL ||  'image_skeleton.png');
-
-  quotesTextElement.style.fontSize = '2em' // Set the font size smaller if the quote has much text
+  quoteTextElement.style.fontSize = '2em' // Set the font size smaller if the quote has much text
   if (quoteText.length > 100) {
-    quotesTextElement.style.fontSize = '1.5em'
+    quoteTextElement.style.fontSize = '1.5em'
   }
 
 }

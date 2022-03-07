@@ -4,7 +4,10 @@ import { showErrorNoQuotesFoundState } from '/modules/states.js'
 import { renderQuoteToHTML } from '/modules/renderQuoteToHTML.js'
 import { showLoadingState } from '/modules/states.js'
 
+let auto_reload_button = document.querySelector('.auto_reload_button')
+
 export function getData() {
+  showLoadingState()
   const apiURL = 'https://quote.api.fdnd.nl/v1/quote'
   fetch(apiURL)
     .then((response) => { // Check if the response status is OK, if yes return the response data
@@ -24,7 +27,10 @@ export function getData() {
       }
       else {
         renderQuoteToHTML(data.data)
-        document.querySelector('.auto_reload_button').style.display = 'inherit'
+        if (window.location.hash == '#homepage') { //Only relevant if the function is executed at the first time
+          window.location.hash = '#overviewpage'
+        }
+        auto_reload_button.style.display = 'inherit'
       }
     })
 
