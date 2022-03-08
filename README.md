@@ -28,23 +28,7 @@ As a student Digital Design, I want to look at inspiring web design quotes, to g
 ## Alle verschillende schermen:
 Dit project kent een aantal verschillende schermen. Deze schermen zullen in de readme gebruikt worden om naar te refereren.
 
-### Empty state:
-![](projectbeschrijving_images/empty_state_new.png)
-
-### Ideal state:
-![](projectbeschrijving_images/ideal_state_new.png)
-
-### Ideal auto reload state:
-![](projectbeschrijving_images/ideal_auto_reload_state_new.png)
-
-### Loading state:
-![](projectbeschrijving_images/loading_state_new.png)
-
-### Error state cannot load quotes:
-![](projectbeschrijving_images/error_state_cannot_load_quotes_new.png)
-
-### Error state no quotes found:
-![](projectbeschrijving_images/error_state_no_quotes_found_new.png)
+![](projectbeschrijving_images/states.png)
 
 Hieronder is een breakdown schets met een beknopte beschrijving van de JavaScript functies weergegeven:
 ![](projectbeschrijving_images/javascript_api_breakdown.png)
