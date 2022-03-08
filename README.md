@@ -8,7 +8,7 @@
 - [Gebruik:](#gebruik)
 - [Activity diagram:](#activity-diagram)
 - [External data source:](#external-data-source)
-
+- [Wensenlijst:](#wensenlijst)
 
 ## Link naar project:
 https://dustinschouten.github.io/FDND-Web-Design-Quotes-App/
@@ -39,7 +39,7 @@ In dit scherm verschijnt vervolgens ook de Auto reload button. Wanneer hierop ge
 Hieronder zie je het activity diagram met een wireflow en een control flow van de code.
 ![](projectbeschrijving_images/activity_diagram.png)
 
-## External data source:
+## Externe gegevensbron:
 De data die in deze single page app wordt gebruikt, is afkomstig van een data-API.
 Link naar de API: https://quote.api.fdnd.nl/v1/quote
 
@@ -52,6 +52,7 @@ In deze gegevensbron bevinden zich een aantal data-objecten. Uit elk object word
 
 Om de data op te halen is gebruikgemaakt van de fetch API.
 
+## Wensenlijst:
+De volgende aspecten zou ik in de toekomst willen toevoegen:
+- Wanneer de gebruiker op een van de twee bestaande error states belandt, wil ik een extra button onderaan het scherm toevoegen. Hiermee wil ik de gebruiker de mogelijkheid geven om opnieuw de pagina te laden. Een soort 'probeer opnieuw' knop dus.
 
-
-- Add a checklist of done stuff and stuff you have still on your wishlist ✅
