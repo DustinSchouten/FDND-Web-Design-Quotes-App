@@ -21,11 +21,7 @@ As a student Digital Design, I want to look at inspiring web design quotes, to g
 
 ## Alle verschillende schermen:
 Dit project kent een aantal verschillende schermen. Deze schermen zullen in de readme gebruikt worden om naar te refereren.
-
 ![](projectbeschrijving_images/states.png)
-
-Hieronder is een breakdown schets met een beknopte beschrijving van de JavaScript functies weergegeven:
-![](projectbeschrijving_images/javascript_api_breakdown.png)
 
 ## Installatie:
 Om deze single page app te installeren, dien je deze repo te clonen naar je apparaat:
