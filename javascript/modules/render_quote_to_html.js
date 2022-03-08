@@ -7,12 +7,12 @@ export function renderQuoteToHTML(data) {
   const tags = data[random_quote_id].tags
   const avatar_img_url = data[random_quote_id].avatar
 
-  let avatar_img_element = document.querySelector('.avatar')
-  let quote_text_element = document.querySelector('#quote_text')
-  let name_element = document.querySelector('#name')
-  let bio_element = document.querySelector('#bio')
-  let tags_element = document.querySelector('#tags')
-  let personal_info_ideal_state_element = document.querySelector('#personal_info_ideal_state')
+  const avatar_img_element = document.querySelector('.avatar')
+  const quote_text_element = document.querySelector('#quote_text')
+  const name_element = document.querySelector('#name')
+  const bio_element = document.querySelector('#bio')
+  const tags_element = document.querySelector('#tags')
+  const personal_info_ideal_state_element = document.querySelector('#personal_info_ideal_state')
 
   // Set the avatar_img_element. If the avatar_img_url is '', set the src to image_skeleton.png
   avatar_img_element.src = (avatar_img_url || 'images/image_skeleton.png');

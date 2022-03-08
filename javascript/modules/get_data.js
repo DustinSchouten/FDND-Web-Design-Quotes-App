@@ -4,10 +4,10 @@ import { showErrorNoQuotesFoundState } from './states.js'
 import { renderQuoteToHTML } from './render_quote_to_html.js'
 import { showLoadingState } from './states.js'
 
-export function getData() {
+export async function getData() {
   showLoadingState()
   const api_url = 'https://quote.api.fdnd.nl/v1/quote'
-  fetch(api_url)
+  const response = fetch(api_url)
     .then((response) => { // Check if the response status is OK, if yes return the response data
       if (response.status >= 200 && response.status <= 299) {
         return response.json()
@@ -38,7 +38,6 @@ export function getData() {
     })
 
     .catch((error) => { // If the response status is not OK
-      console.log(error)
       showErrorNotLoadedState()
     })
 
