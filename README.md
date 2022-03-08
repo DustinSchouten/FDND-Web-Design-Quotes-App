@@ -10,10 +10,10 @@
   * [Loading state:](#loading-state-)
   * [Error state cannot load quotes:](#error-state-cannot-load-quotes-)
   * [Error state no quotes found:](#error-state-no-quotes-found-)
-  * [Installatie:](#installatie-)
-  * [Gebruik:](#gebruik-)
-  * [Activity diagram:](#activity-diagram-)
-  * [External data source:](#external-data-source-)
+- [Installatie:](#installatie-)
+- [Gebruik:](#gebruik-)
+- [Activity diagram:](#activity-diagram-)
+- [External data source:](#external-data-source-)
 
 
 ## Link naar project:
