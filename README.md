@@ -1,10 +1,28 @@
 # Documentatie FDND Web Design Quotes App
 
+- [Link naar project:](#link-naar-project-)
+- [Beschrijving:](#beschrijving-)
+- [User story:](#user-story-)
+- [Alle verschillende schermen:](#alle-verschillende-schermen-)
+  * [Empty state:](#empty-state-)
+  * [Ideal state:](#ideal-state-)
+  * [Ideal auto reload state:](#ideal-auto-reload-state-)
+  * [Loading state:](#loading-state-)
+  * [Error state cannot load quotes:](#error-state-cannot-load-quotes-)
+  * [Error state no quotes found:](#error-state-no-quotes-found-)
+  * [Installatie:](#installatie-)
+  * [Gebruik:](#gebruik-)
+  * [Activity diagram:](#activity-diagram-)
+  * [External data source:](#external-data-source-)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Link naar project:
 https://dustinschouten.github.io/FDND-Web-Design-Quotes-App/
 
-## Introductie:
-Dit project is gemaakt en bedoeld voor mensen die op zoek zijn naar inspirerende quotes die gaan over web design en web development. Het is een single page web app die volledig is gemaakt met HTML, CSS en JavaScript waarbij er gebruikgemaakt wordt van de fetch API om data op te halen.
+## Beschrijving:
+Dit project is gemaakt en bedoeld voor mensen die op zoek zijn naar inspirerende quotes die gaan over web design en web development. Het is een single page web app die volledig is gemaakt met HTML, CSS en JavaScript waarbij er gebruikgemaakt wordt van de fetch API om data op te halen. Vervolgens worden er op basis van de opgehaalde data quotes gegenereerd.
 
 ## User story: 
 As a student Digital Design, I want to look at inspiring web design quotes, to get some fresh energy when I'm down while working on crazy deadlines
@@ -32,22 +50,6 @@ Dit project kent een aantal verschillende schermen. Deze schermen zullen in de r
 
 Hieronder is een breakdown schets met een beknopte beschrijving van de JavaScript functies weergegeven:
 ![](projectbeschrijving_images/javascript_api_breakdown.png)
-
-Ondertussen is de code gerefactord en is er een auto_reloader toegevoegd. Van de code is hier een activity diagram toegevoegd.
-![](projectbeschrijving_images/activity_diagram.png)
-
-
-
-
-
-
-
-- Add a link to your live demo in Github Pages 🌐
-
-- Write a description of your work 
-
-- Add a nice poster image showing off your shiny frontend 📸
-
 
 ### Installatie:
 Om deze single page app te installeren, dien je deze repo te clonen naar je apparaat:
