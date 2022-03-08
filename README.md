@@ -51,7 +51,7 @@ Ondertussen is de code gerefactord en is er een auto_reloader toegevoegd. Van de
 
 ### Installatie:
 Om deze single page app te installeren, dien je deze repo te clonen naar je apparaat:
-Dit doe je met 'git clone https://github.com/DustinSchouten/FDND-Web-Design-Quotes-App.git'
+Dit doe je met `git clone https://github.com/DustinSchouten/FDND-Web-Design-Quotes-App.git`
 Gebruik een live server om de website te hosten. De app werkt niet als je deze vanaf je bestandssysteem laat draaien.
 
 ### Gebruik:
