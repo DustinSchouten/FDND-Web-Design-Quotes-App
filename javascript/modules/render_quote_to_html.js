@@ -1,37 +1,36 @@
 export function renderQuoteToHTML(data) {
-  const quotesLength = data.length
-  const randomQuoteId = Math.floor(Math.random()*quotesLength)
-  const quoteText = data[randomQuoteId].text
-  const name = data[randomQuoteId].name
-  const bio = data[randomQuoteId].bio
-  const tags = data[randomQuoteId].tags
-  const avatarImgURL = data[randomQuoteId].avatar
+  const quotes_length = data.length
+  const random_quote_id = Math.floor(Math.random()*quotes_length)
+  const quote_text = data[random_quote_id].text
+  const name = data[random_quote_id].name
+  const bio = data[random_quote_id].bio
+  const tags = data[random_quote_id].tags
+  const avatar_img_url = data[random_quote_id].avatar
 
-  let avatarImgElement = document.querySelector('.avatar')
-  let quoteTextElement = document.querySelector('#quoteText')
-  let nameElement = document.querySelector('#name')
-  let bioElement = document.querySelector('#bio')
-  let tagsElement = document.querySelector('#tags')
-  let personal_info_ideal_stateElement = document.querySelector('#personal_info_ideal_state')
+  let avatar_img_element = document.querySelector('.avatar')
+  let quote_text_element = document.querySelector('#quote_text')
+  let name_element = document.querySelector('#name')
+  let bio_element = document.querySelector('#bio')
+  let tags_element = document.querySelector('#tags')
+  let personal_info_ideal_state_element = document.querySelector('#personal_info_ideal_state')
 
-  // Set the avatarImgElement. If the avatarImgURL is '', set the src to image_skeleton.png
-  avatarImgElement.src = (avatarImgURL || 'images/image_skeleton.png');
-
-  quoteTextElement.textContent = quoteText
-  nameElement.textContent = name
-  bioElement.textContent = bio
-  tagsElement.textContent = tags
-  personal_info_ideal_stateElement.style.display = 'flex'
+  // Set the avatar_img_element. If the avatar_img_url is '', set the src to image_skeleton.png
+  avatar_img_element.src = (avatar_img_url || 'images/image_skeleton.png');
+  quote_text_element.textContent = quote_text
+  name_element.textContent = name
+  bio_element.textContent = bio
+  tags_element.textContent = tags
+  personal_info_ideal_state_element.style.display = 'flex'
 
   // Restart the animation
-  quoteTextElement.style.animation = 'none'
-  quoteTextElement.offsetHeight
-  quoteTextElement.style.animation = null
+  quote_text_element.style.animation = 'none'
+  quote_text_element.offsetHeight
+  quote_text_element.style.animation = null
   // Animation restarted
 
-  quoteTextElement.style.fontSize = '1.75em' // Set the font size smaller if the quote has much text
-  if (quoteText.length > 100) {
-    quoteTextElement.style.fontSize = '1.4em'
+  quote_text_element.style.fontSize = '1.75em' // Set the font size smaller if the quote has much text
+  if (quote_text.length > 100) {
+    quote_text_element.style.fontSize = '1.4em'
   }
 
 }
