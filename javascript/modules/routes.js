@@ -1,6 +1,6 @@
 import { Routie } from './routie.js'
-import { switchToIdealState } from '/modules/states.js'
-import { switchToIdealAutoReloadState } from '/modules/states.js'
+import { switchToIdealState } from './states.js'
+import { switchToIdealAutoReloadState } from './states.js'
 
 export function handleRoutes() {
   routie(

@@ -1,6 +1,6 @@
-import { getData } from '/modules/getData.js'
-import { handleRoutes } from '/modules/routes.js'
-import { switchFromDifferentIdealStates } from '/modules/states.js'
+import { getData } from './modules/getData.js'
+import { handleRoutes } from './modules/routes.js'
+import { switchFromDifferentIdealStates } from './modules/states.js'
 
 function main() {
   let generate_quote_button = document.querySelector('.generate_quote_button')

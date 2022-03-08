@@ -1,8 +1,8 @@
-import { hideLoadingState } from '/modules/states.js'
-import { showErrorNotLoadedState } from '/modules/states.js'
-import { showErrorNoQuotesFoundState } from '/modules/states.js'
-import { renderQuoteToHTML } from '/modules/renderQuoteToHTML.js'
-import { showLoadingState } from '/modules/states.js'
+import { hideLoadingState } from './states.js'
+import { showErrorNotLoadedState } from './states.js'
+import { showErrorNoQuotesFoundState } from './states.js'
+import { renderQuoteToHTML } from './render_quote_to_html.js'
+import { showLoadingState } from './states.js'
 
 export function getData() {
   showLoadingState()
