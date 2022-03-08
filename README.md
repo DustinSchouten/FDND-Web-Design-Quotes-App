@@ -7,7 +7,7 @@
 - [Installatie:](#installatie)
 - [Gebruik:](#gebruik)
 - [Activity diagram:](#activity-diagram)
-- [External data source:](#external-data-source)
+- [Externe gegevensbron:](#externe-gegevensbron)
 - [Wensenlijst:](#wensenlijst)
 
 ## Link naar project:
