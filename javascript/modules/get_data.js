@@ -36,9 +36,9 @@ export function getData() {
       }
     })
 
-    // .catch((error) => { // If the response status is not OK
-    //   showErrorNotLoadedState()
-    // })
+    .catch((error) => { // If the response status is not OK
+      showErrorNotLoadedState()
+    })
 
     .finally(() => { // Always executed
       console.log('Program finished')
