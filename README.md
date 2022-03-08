@@ -1,6 +1,7 @@
-Link naar project: https://dustinschouten.github.io/FDND-Web-Design-Quotes-App/
-
 # Documentatie FDND Web Design Quotes App
+
+## Link naar project:
+https://dustinschouten.github.io/FDND-Web-Design-Quotes-App/
 
 ## Introductie:
 Dit project is gemaakt en bedoeld voor mensen die op zoek zijn naar inspirerende quotes die gaan over web design en web development. Het is een single page web app die volledig is gemaakt met HTML, CSS en JavaScript waarbij er gebruikgemaakt wordt van de fetch API om data op te halen.
@@ -9,9 +10,9 @@ Dit project is gemaakt en bedoeld voor mensen die op zoek zijn naar inspirerende
 As a student Digital Design, I want to look at inspiring web design quotes, to get some fresh energy when I'm down while working on crazy deadlines
 
 ## Alle verschillende schermen:
-Dit project kent een aantal verschillende schermen:
+Dit project kent een aantal verschillende schermen. Deze schermen zullen in de readme gebruikt worden om naar te refereren.
 
-### Home screen:
+### Empty state:
 ![](projectbeschrijving_images/empty_state_new.png)
 
 ### Ideal state:
@@ -34,3 +35,51 @@ Hieronder is een breakdown schets met een beknopte beschrijving van de JavaScrip
 
 Ondertussen is de code gerefactord en is er een auto_reloader toegevoegd. Van de code is hier een activity diagram toegevoegd.
 ![](projectbeschrijving_images/activity_diagram.png)
+
+
+
+
+
+
+
+- Add a link to your live demo in Github Pages 🌐
+
+- Write a description of your work 
+
+- Add a nice poster image showing off your shiny frontend 📸
+
+
+### Installatie:
+Om deze single page app te installeren, dien je deze repo te clonen naar je apparaat:
+Dit doe je met 'git clone https://github.com/DustinSchouten/FDND-Web-Design-Quotes-App.git'
+Gebruik een live server om de website te hosten. De app werkt niet als je deze vanaf je bestandssysteem laat draaien.
+
+### Gebruik:
+Het gebruik van deze app is relatief eenvoudig, door het beperkte aantal interacties dat de app heeft. De app kan d.m.v. twee verschillende buttons worden bediend. Zie het plaatje hieronder:
+![](projectbeschrijving_images/buttons.png)
+
+Het eerste scherm dat de gebruiker te zien krijgt is de empty_state. Hierbij is alleen de 'Generate new quote' button te zien. Wanneer hierop geklikt wordt en het proces loopt goed, dan wordt de ideal state getoond. In dit scherm wordt er een willekeurige quote met bijbehorende gegevens geladen en getoond. 
+In dit scherm verschijnt vervolgens ook de Auto reload button. Wanneer hierop geklikt wordt, wordt de ideal state getoond. Er wordt dan om de vijf seconden een nieuwe quote gegenereerd. Als de gebruiker opnieuw op deze button klikt, gaat de gebruiker weer terug naar de ideal state en verschijnt de 'Generate new quote' button weer.
+
+### Activity diagram:
+Hieronder zie je het activity diagram met een wireflow en een control flow van de code.
+![](projectbeschrijving_images/activity_diagram.png)
+
+### External data source:
+De data die in deze single page app wordt gebruikt, is afkomstig van een data-API.
+Link naar de API: https://quote.api.fdnd.nl/v1/quote
+
+In deze gegevensbron bevinden zich een aantal data-objecten. Uit elk object worden onderstaande waardes gehaald:
+- de quote
+- de naam van de auteur
+- de (beknopte) biografie van de auteur
+- enkele bijbehorende tags
+- een url van een foto van de auteur
+
+Om de data op te halen is gebruikgemaakt van de fetch API.
+
+
+
+- Add a checklist of done stuff and stuff you have still on your wishlist ✅
+
+- Add a table of contents 📚
