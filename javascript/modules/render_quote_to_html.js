@@ -12,16 +12,16 @@ export function renderQuoteToHTML(data) {
   let nameElement = document.querySelector('#name')
   let bioElement = document.querySelector('#bio')
   let tagsElement = document.querySelector('#tags')
-  let personal_info_empty_stateElement = document.querySelector('#personal_info_empty_state')
+  let personal_info_ideal_stateElement = document.querySelector('#personal_info_ideal_state')
 
   // Set the avatarImgElement. If the avatarImgURL is '', set the src to image_skeleton.png
-  avatarImgElement.src = (avatarImgURL || 'image_skeleton.png');
+  avatarImgElement.src = (avatarImgURL || 'images/image_skeleton.png');
 
   quoteTextElement.textContent = quoteText
   nameElement.textContent = name
   bioElement.textContent = bio
   tagsElement.textContent = tags
-  personal_info_empty_stateElement.style.display = 'flex'
+  personal_info_ideal_stateElement.style.display = 'flex'
 
   // Restart the animation
   quoteTextElement.style.animation = 'none'

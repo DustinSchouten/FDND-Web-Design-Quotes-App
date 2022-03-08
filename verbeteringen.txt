@@ -1,3 +1,0 @@
-Beide errors in één error state
-
-Code reviews zet voortaan elke feedbackregel in een nieuwe issue

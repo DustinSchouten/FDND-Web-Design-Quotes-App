@@ -31,7 +31,7 @@ export function getData() {
         if (window.location.hash == '#homepage') { //Only relevant if the function is executed at the first time
           window.location.hash = '#overviewpage'
         }
-        let auto_reload_button = document.querySelector('.auto_reload_button')
+        const auto_reload_button = document.querySelector('.auto_reload_button')
         auto_reload_button.style.display = 'inherit'
       }
     })

@@ -1,16 +1,18 @@
 import { getData } from './get_data.js'
 
-let textballoon_empty_state = document.querySelector('#textballoon_empty_state')
-let textballoon_loading_state = document.querySelector('#textballoon_loading_state')
-let personal_info_loading_state = document.querySelector('#personal_info_loading_state')
-let error_no_quotes_found_state = document.querySelector('#error_no_quotes_found_state')
-let error_not_loaded_state = document.querySelector('#error_not_loaded_state')
+const textballoon_empty_state = document.querySelector('#textballoon_empty_state')
+const textballoon_loading_state = document.querySelector('#textballoon_loading_state')
+const personal_info_loading_state = document.querySelector('#personal_info_loading_state')
+const error_no_quotes_found_state = document.querySelector('#error_no_quotes_found_state')
+const error_not_loaded_state = document.querySelector('#error_not_loaded_state')
 
-let auto_reloader
-let generate_quote_button = document.querySelector('.generate_quote_button')
-let auto_reload_button = document.querySelector('.auto_reload_button')
-let auto_reload_button_rotating_img = auto_reload_button.querySelector('img')
-let progress_bar = document.querySelector('.progress_bar')
+let auto_reloader = undefined
+const generate_quote_button = document.querySelector('.generate_quote_button')
+const auto_reload_button = document.querySelector('.auto_reload_button')
+generate_quote_button.addEventListener('click', getData)
+auto_reload_button.addEventListener('click', switchFromDifferentIdealStates)
+const auto_reload_button_rotating_img = auto_reload_button.querySelector('img')
+const progress_bar = document.querySelector('.progress_bar')
 
 export function showLoadingState() {
   textballoon_empty_state.style.display = 'none'
