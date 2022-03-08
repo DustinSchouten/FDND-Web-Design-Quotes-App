@@ -59,7 +59,7 @@ Het gebruik van deze app is relatief eenvoudig, door het beperkte aantal interac
 ![](projectbeschrijving_images/buttons.png)
 
 Het eerste scherm dat de gebruiker te zien krijgt is de empty_state. Hierbij is alleen de 'Generate new quote' button te zien. Wanneer hierop geklikt wordt en het proces loopt goed, dan wordt de ideal state getoond. In dit scherm wordt er een willekeurige quote met bijbehorende gegevens geladen en getoond. 
-In dit scherm verschijnt vervolgens ook de Auto reload button. Wanneer hierop geklikt wordt, wordt de ideal state getoond. Er wordt dan om de vijf seconden een nieuwe quote gegenereerd. Als de gebruiker opnieuw op deze button klikt, gaat de gebruiker weer terug naar de ideal state en verschijnt de 'Generate new quote' button weer.
+In dit scherm verschijnt vervolgens ook de Auto reload button. Wanneer hierop geklikt wordt, wordt de ideal auto reload state getoond. Er wordt dan om de vijf seconden een nieuwe quote gegenereerd. Als de gebruiker opnieuw op deze button klikt, gaat de gebruiker weer terug naar de ideal state en verschijnt de 'Generate new quote' button weer.
 
 ### Activity diagram:
 Hieronder zie je het activity diagram met een wireflow en een control flow van de code.
