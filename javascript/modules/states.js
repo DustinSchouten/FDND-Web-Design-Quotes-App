@@ -1,4 +1,4 @@
-import { getData } from './getData.js'
+import { getData } from './get_data.js'
 
 let textballoon_empty_state = document.querySelector('#textballoon_empty_state')
 let textballoon_loading_state = document.querySelector('#textballoon_loading_state')

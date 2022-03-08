@@ -1,4 +1,4 @@
-import { getData } from './modules/getData.js'
+import { getData } from './modules/get_data.js'
 import { handleRoutes } from './modules/routes.js'
 import { switchFromDifferentIdealStates } from './modules/states.js'
 
