@@ -20,7 +20,7 @@ export async function getData() {
     .then(function(data) {
       data = data.data
       hideLoadingState()
-      const filtered_data = data.filter((item) => { // Use filter function to remove all the quotes that has less than or equal to 10 characters;
+      const filtered_data = data.filter((item) => { // Use filter function to remove all the quotes that has less than or equal to 10 characters
         return item.text.length > 10
       })
       const quotes_length = filtered_data.length
@@ -28,10 +28,12 @@ export async function getData() {
         showErrorNoQuotesFoundState()
       }
       else {
-        renderQuoteToHTML(filtered_data)
-        if (window.location.hash == '#homepage') { // Only relevant if the function getData() is executed at the first time
-          window.location.hash = '#overviewpage'
+        let window_location = window.location.hash.split('/')[0]
+        if (window_location == '#homepage') { // Only relevant if the function getData() is executed at the first time
+          window_location = '#overviewpage'
         }
+        renderQuoteToHTML(filtered_data,window_location)
+
         const auto_reload_button = document.querySelector('.auto_reload_button')
         auto_reload_button.style.display = 'inherit'
       }

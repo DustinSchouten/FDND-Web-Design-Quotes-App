@@ -37,7 +37,8 @@ export function showErrorNotLoadedState() {
 }
 
 export function switchFromDifferentIdealStates() {
-  if (window.location.hash == '#overviewpage') {
+  let window_location = window.location.hash.split('/')[0]
+  if (window_location == '#overviewpage') {
     window.location.hash = '#overviewpage_auto_reload'
   }
   else {

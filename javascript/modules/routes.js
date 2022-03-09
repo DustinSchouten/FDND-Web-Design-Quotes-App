@@ -12,5 +12,6 @@ export function handleRoutes() {
       'overviewpage_auto_reload' : () => {
         switchToIdealAutoReloadState()
       }
+
     })
 }

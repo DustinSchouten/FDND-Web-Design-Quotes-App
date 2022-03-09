@@ -1,4 +1,4 @@
-export function renderQuoteToHTML(data) {
+export function renderQuoteToHTML(data,window_location) {
   const quotes_length = data.length
   const random_quote_id = Math.floor(Math.random()*quotes_length)
   const quote_text = data[random_quote_id].text
@@ -15,7 +15,7 @@ export function renderQuoteToHTML(data) {
   const personal_info_ideal_state_element = document.querySelector('#personal_info_ideal_state')
 
   // Set the avatar_img_element. If the avatar_img_url is '', set the src to image_skeleton.png
-  avatar_img_element.src = (avatar_img_url || 'images/image_skeleton.png');
+  avatar_img_element.src = (avatar_img_url || 'images/image_skeleton.png')
   quote_text_element.textContent = quote_text
   name_element.textContent = name
   bio_element.textContent = bio
@@ -33,4 +33,10 @@ export function renderQuoteToHTML(data) {
     quote_text_element.style.fontSize = '1.4em'
   }
 
+  if (window_location == '#overviewpage') {
+    window.location.href = '#overviewpage/:' + quote_text.replaceAll(' ','_')
+  }
+  if (window_location == '#overviewpage_auto_reload') {
+    window.location.href = '#overviewpage_auto_reload/:' + quote_text.replaceAll(' ','_')
+  }
 }
