@@ -39,5 +39,4 @@ export function renderQuoteToHTML(data,window_location) {
   if (window_location == '#overviewpage_auto_reload') {
     window.location.href = '#overviewpage_auto_reload/:' + quote_text.replaceAll(' ','_')
   }
-  console.log(window.location.href)
 }
